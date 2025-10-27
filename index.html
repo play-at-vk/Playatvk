@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VK Software’s Studio - Where Every Journey Holds a Secret.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Official website for VK Software's Studio. Explore our innovative games and software like 'To the Life', 'Loopify', and 'Bud Calc'.">
+  <link rel="icon" href="favicon.ico">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-app-pub-7502821186819058"
+     crossorigin="anonymous"></script>
+  <style>
+    /* CSS Variables */
+    :root {
+      --primary-bg: #0a0a0a;
+      --text-color: #e0e0e0; /* Slightly lighter for futuristic feel */
+      --accent-color: #00ffff; /* Bright Cyan */
+      --accent-hover: #00e6e6; /* Slightly darker cyan for hover */
+      --accent-glow: rgba(0, 255, 255, 0.6);
+      --accent-glow-strong: rgba(0, 255, 255, 0.8);
+      --dark-panel-bg: #1a1a1a; /* Darker background for solid elements */
+      --glass-bg-light: rgba(255, 255, 255, 0.08); /* More transparent */
+      --glass-bg-dark: rgba(0, 0, 0, 0.6); /* Darker, slightly opaque glass */
+
+      --border-accent: 3px solid var(--accent-color);
+      --border-dark: 3px solid #333;
+      --border-glass: 2px solid rgba(0, 255, 255, 0.4); /* Refined glass border */
+      --shadow-accent-light: 0 0 15px var(--accent-glow);
+      --shadow-accent-medium: 0 0 20px var(--accent-glow); /* Stronger medium glow */
+      --shadow-accent-heavy: 0 0 40px var(--accent-glow-strong); /* Very strong glow */
+
+      --spacing-sm: 10px;
+      --spacing-md: 20px;
+      --spacing-lg: 30px;
+      --spacing-xl: 40px;
+
+      --font-size-base: 1rem;
+      --font-size-sm: 0.9rem;
+      --font-size-lg: 1.2rem;
+      --font-size-xl: 2.2rem; /* Slightly larger for impact */
+      --font-size-heading: 2.8rem; /* More prominent headings */
+
+      --transition-fast: 0.2s ease-out;
+      --transition-medium: 0.3s ease-out;
+      --transition-slow: 0.4s ease-out;
+    }
+
+    /* Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--primary-bg);
+      color: var(--text-color);
+      font-family: 'Segoe UI', 'Arial', sans-serif; /* Fallback for futuristic font */
+      /* If using Google Font, uncomment: */
+      /* font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif; */
+      padding: var(--spacing-md);
+      text-align: center;
+      overflow-x: hidden;
+      position: relative; /* For background effects */
+      min-height: 100vh; /* Ensure full height for background */
+
+      /* Futuristic Background Pattern */
+      background-image:
+        radial-gradient(circle at center, rgba(0, 255, 255, 0.05) 0%, transparent 70%),
+        linear-gradient(45deg, var(--primary-bg) 25%, transparent 25%, transparent 75%, var(--primary-bg) 75%, var(--primary-bg)),
+        linear-gradient(135deg, var(--primary-bg) 25%, transparent 25%, transparent 75%, var(--primary-bg) 75%, var(--primary-bg));
+      background-size: 50px 50px;
+      background-position: 0 0, 10px 10px;
+    }
+
+    h1, h2, h3 {
+      color: var(--accent-color);
+      margin-bottom: var(--spacing-md);
+      text-shadow: 0 0 5px rgba(0, 255, 255, 0.3); /* Subtle text glow */
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+      transition: color var(--transition-fast), text-shadow var(--transition-fast);
+    }
+
+    a:hover {
+      color: var(--accent-hover);
+      text-decoration: underline;
+      text-shadow: 0 0 8px rgba(0, 255, 255, 0.6);
+    }
+
+    /* Header */
+    header {
+      margin-bottom: var(--spacing-xl);
+      padding-top: var(--spacing-md);
+    }
+
+    header h1 {
+      font-size: var(--font-size-heading);
+      margin-top: var(--spacing-md);
+      margin-bottom: var(--spacing-sm);
+      color: var(--text-color); /* Main title stands out */
+      text-shadow: var(--shadow-accent-light);
+    }
+
+    .tagline {
+      font-size: var(--font-size-lg);
+      color: var(--accent-color);
+      margin-bottom: var(--spacing-xl);
+      text-shadow: 0 0 3px rgba(0, 255, 255, 0.3);
+    }
+
+    .top-logo-video {
+      width: 140px; /* Slightly larger */
+      height: 140px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto var(--spacing-md);
+      border: var(--border-accent);
+      box-shadow: var(--shadow-accent-medium);
+      position: relative; /* For animation */
+      animation: pulsate 2s infinite alternate ease-in-out; /* Subtle pulse */
+    }
+
+    .top-logo-video iframe {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Main Hero Section */
+    .hero-video-section {
+      position: relative;
+      width: 100%;
+      max-width: 1000px; /* Slightly wider */
+      margin: 0 auto var(--spacing-xl);
+      padding-top: 56.25%; /* 16:9 Aspect Ratio */
+      border-radius: 20px; /* More rounded */
+      overflow: hidden;
+      border: var(--border-dark);
+      box-shadow: var(--shadow-accent-heavy); /* Stronger initial glow */
+      transition: box-shadow var(--transition-medium);
+    }
+
+    .hero-video-section:hover {
+        box-shadow: 0 0 60px var(--accent-glow-strong); /* Even stronger on hover */
+    }
+
+    .hero-video-section iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .count-overlay {
+      position: absolute;
+      top: var(--spacing-md); /* More space from top */
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 var(--spacing-lg); /* More padding */
+      z-index: 10;
+    }
+
+    .count-circle {
+      width: 110px; /* Slightly larger */
+      height: 110px;
+      border-radius: 50%;
+      background: rgba(0, 255, 255, 0.08);
+      border: 4px solid var(--accent-color); /* Thicker border */
+      color: var(--accent-color);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: var(--shadow-accent-light);
+      backdrop-filter: blur(8px); /* More blur for glassy effect */
+      font-weight: bold;
+      transition: transform var(--transition-medium), box-shadow var(--transition-medium), border-color var(--transition-medium);
+    }
+
+    .count-circle:hover {
+      transform: translateY(-8px) scale(1.1); /* More pronounced lift */
+      box-shadow: 0 0 30px var(--accent-glow-strong); /* Stronger glow on hover */
+      border-color: var(--accent-hover);
+    }
+
+    .count-circle .number {
+      font-size: var(--font-size-xl);
+      text-shadow: var(--shadow-accent-light);
+    }
+
+    .count-circle .label {
+      font-size: 0.9rem; /* Slightly larger label */
+      margin-top: 6px;
+      color: var(--text-color);
+    }
+
+    /* Panel Buttons */
+    .panel-btn {
+      position: absolute;
+      top: var(--spacing-md); /* Aligned with count circles */
+      width: 60px; /* Larger buttons */
+      height: 60px;
+      border-radius: 50%;
+      background-color: var(--accent-color);
+      color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.8rem; /* Larger icon */
+      cursor: pointer;
+      z-index: 1000;
+      transition: opacity var(--transition-medium), background-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+      border: none;
+      box-shadow: var(--shadow-accent-medium);
+    }
+
+    .panel-btn#gameBtn { right: var(--spacing-md); }
+    .panel-btn#softwareBtn { left: var(--spacing-md); }
+
+    .panel-btn:hover {
+      background-color: var(--accent-hover);
+      transform: scale(1.15) rotate(5deg); /* More dynamic hover */
+      box-shadow: 0 0 25px var(--accent-glow-strong);
+    }
+
+    .panel-btn.hidden {
+      opacity: 0;
+      pointer-events: none;
+      transform: scale(0.8); /* Shrink when hidden */
+    }
+
+    /* Slide Panels (Games & Software) */
+    .slide-panel {
+      position: fixed;
+      top: 0;
+      width: 85%; /* Slightly wider */
+      max-width: 450px; /* Wider max width */
+      height: 100%;
+      background: var(--glass-bg-light);
+      backdrop-filter: blur(15px); /* More blur for stronger glass */
+      color: var(--text-color);
+      padding: var(--spacing-lg); /* More internal padding */
+      overflow-y: auto;
+      transform: translateX(100%);
+      transition: transform var(--transition-slow);
+      z-index: 999;
+      box-shadow: var(--shadow-accent-heavy);
+      border-left: var(--border-glass); /* Consistent glass border */
+      border-right: var(--border-glass);
+    }
+
+    #gamePanel { right: 0; }
+    #softwarePanel { left: 0; transform: translateX(-100%); }
+
+    .slide-panel.open#gamePanel { transform: translateX(0); }
+    .slide-panel.open#softwarePanel { transform: translateX(0); }
+
+    .close-panel {
+      position: sticky; /* Make close button stick to top */
+      top: var(--spacing-md);
+      left: calc(100% - 40px); /* Adjust position based on button size */
+      font-size: 1.8rem; /* Larger close icon */
+      background: var(--accent-color);
+      color: black;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      z-index: 101; /* Above panel content */
+      transition: background-color var(--transition-fast), transform var(--transition-fast);
+      border: none;
+      box-shadow: var(--shadow-accent-light);
+    }
+
+    .close-panel:hover {
+      background-color: var(--accent-hover);
+      transform: scale(1.1) rotate(90deg); /* Spin on hover */
+    }
+
+    .panel-content {
+      margin-top: var(--spacing-xl);
+      padding-top: var(--spacing-sm); /* Account for sticky button */
+    }
+
+    .app-card, .game-card {
+      background: var(--glass-bg-dark);
+      padding: var(--spacing-md);
+      margin-bottom: var(--spacing-md);
+      border-radius: 12px;
+      box-shadow: var(--shadow-accent-medium);
+      text-align: left;
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
+      border: 1px solid rgba(0, 255, 255, 0.2); /* Subtle card border */
+    }
+
+    .app-card:hover, .game-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px var(--accent-glow);
+      background: rgba(0, 255, 255, 0.05); /* Lighter glass on hover */
+    }
+
+    .app-card h3, .game-card h3 {
+      color: var(--accent-color);
+      margin-bottom: 8px;
+      font-size: var(--font-size-lg);
+    }
+
+    .app-card p, .game-card p {
+      font-size: var(--font-size-sm);
+      margin-bottom: 12px;
+    }
+
+    /* Video player container within cards */
+    .card-video-container {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 Aspect Ratio */
+      margin-bottom: var(--spacing-md);
+      border-radius: 8px;
+      overflow: hidden;
+      border: 2px solid rgba(0, 255, 255, 0.3);
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+      background-color: #000; /* Ensures black background while loading */
+    }
+
+    .card-video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+
+    .app-card a, .game-card a {
+      background: var(--accent-color);
+      padding: 8px 16px; /* Larger button */
+      border-radius: 8px; /* More rounded */
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.3); /* Button glow */
+    }
+
+    .app-card a:hover, .game-card a:hover {
+      background-color: var(--accent-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 0 15px var(--accent-glow-strong);
+    }
+
+    /* Info Section */
+    .info-section {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-md);
+      max-width: 960px;
+      margin: 0 auto var(--spacing-lg);
+    }
+
+    .info-box {
+      background: var(--dark-panel-bg);
+      padding: var(--spacing-md);
+      border-radius: 16px; /* More rounded */
+      box-shadow: var(--shadow-accent-medium);
+      transition: transform var(--transition-medium), box-shadow var(--transition-medium), background var(--transition-medium);
+      border: 1px solid rgba(0, 255, 255, 0.15); /* Subtle border */
+    }
+
+    .info-box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 30px var(--accent-glow);
+      background: #222; /* Slightly lighter on hover */
+    }
+
+    /* Social Buttons - Now inside extra-box */
+    .social-links {
+        padding: var(--spacing-md); /* Add padding to the whole block */
+        border-radius: 16px; /* Match other blocks */
+        background: var(--glass-bg-light); /* Match extra-box style */
+        backdrop-filter: blur(10px);
+        box-shadow: var(--shadow-accent-medium);
+        transition: transform var(--transition-medium), box-shadow var(--transition-medium), background var(--transition-medium);
+        border: var(--border-glass); /* Consistent glass border */
+        color: #ccc;
+    }
+    .social-links:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 0 25px var(--accent-glow);
+        background: rgba(0, 255, 255, 0.08);
+    }
+
+    .social-links h2 {
+        margin-top: 0; /* Adjust margin as it's now in a box */
+        margin-bottom: var(--spacing-md);
+        text-align: center;
+    }
+
+    .social-buttons {
+      display: flex;
+      justify-content: center;
+      gap: var(--spacing-lg); /* More space between buttons */
+      flex-wrap: wrap;
+      margin-bottom: 0; /* No external margin needed here */
+    }
+
+    .social-btn {
+      width: 70px; /* Larger social buttons */
+      height: 70px;
+      border-radius: 50%;
+      background-color: var(--accent-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #000;
+      font-size: 1.8rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+      box-shadow: var(--shadow-accent-medium);
+    }
+
+    .social-btn:hover {
+      background-color: var(--accent-hover);
+      transform: scale(1.2) rotate(10deg); /* More dynamic hover */
+      box-shadow: 0 0 30px var(--accent-glow-strong);
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+
+    /* Extra Blocks */
+    .extra-blocks {
+      max-width: 960px;
+      margin: var(--spacing-xl) auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--spacing-md);
+    }
+
+    .extra-box {
+      background: var(--glass-bg-light);
+      padding: var(--spacing-md);
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow-accent-medium);
+      transition: transform var(--transition-medium), box-shadow var(--transition-medium), background var(--transition-medium);
+      border: var(--border-glass); /* Consistent glass border */
+      color: #ccc; /* Slightly dimmer text */
+    }
+
+    .extra-box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 25px var(--accent-glow);
+      background: rgba(0, 255, 255, 0.08); /* Lighter glass on hover */
+    }
+
+    /* News & Updates Block */
+    .news-updates-block {
+      background: var(--dark-panel-bg);
+      padding: var(--spacing-md);
+      border-radius: 16px;
+      box-shadow: var(--shadow-accent-medium);
+      border: 1px solid rgba(0, 255, 255, 0.15);
+      text-align: left;
+    }
+
+    .news-updates-block h3 {
+        color: var(--accent-color);
+        margin-bottom: var(--spacing-md);
+        text-align: center;
+    }
+
+    .news-item {
+        margin-bottom: var(--spacing-sm);
+        padding-bottom: var(--spacing-sm);
+        border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+    }
+
+    .news-item:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .news-item .date {
+        font-size: 0.8em;
+        color: #888;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    .news-item p {
+        font-size: 0.9em;
+        color: var(--text-color);
+    }
+
+    .news-item a {
+        font-size: 0.9em;
+        color: var(--accent-color);
+        text-decoration: underline;
+    }
+
+    .news-item a:hover {
+        color: var(--accent-hover);
+    }
+
+
+    /* Footer */
+    footer {
+      margin-top: var(--spacing-xl);
+      font-size: var(--font-size-sm);
+      color: #888;
+      padding: var(--spacing-sm);
+    }
+
+    .footer-buttons {
+        margin-top: var(--spacing-md);
+        display: flex;
+        justify-content: center;
+        gap: var(--spacing-md);
+        flex-wrap: wrap;
+        margin-bottom: var(--spacing-md);
+    }
+
+    /* Popup Windows */
+    .popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8); /* Darker overlay */
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 2000;
+      padding: var(--spacing-md);
+      animation: fadeIn 0.3s forwards;
+      /* Ensure scrollability of the overlay itself for smaller screens if content is too big */
+      overflow-y: auto;
+    }
+
+    .popup-content {
+      background: rgba(255,255,255,0.08); /* Lighter glass for popups */
+      backdrop-filter: blur(20px); /* Stronger blur for popups */
+      padding: var(--spacing-xl); /* More padding */
+      border-radius: 20px; /* More rounded */
+      max-width: 650px; /* Wider popup */
+      width: 90%;
+      color: var(--text-color);
+      text-align: left;
+      box-shadow: 0 0 25px var(--accent-glow-strong);
+      position: relative;
+      border: 2px solid var(--accent-color); /* Stronger border for popups */
+      animation: slideInFromTop 0.4s ease-out forwards;
+
+      /* --- NEW/UPDATED: Make popup content scrollable and height-constrained --- */
+      max-height: 90vh; /* Max height of the popup relative to viewport height */
+      overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
+      -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+    }
+
+    /* Optional: Style scrollbar for Webkit browsers */
+    .popup-content::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .popup-content::-webkit-scrollbar-track {
+        background: rgba(0, 255, 255, 0.1);
+        border-radius: 10px;
+    }
+
+    .popup-content::-webkit-scrollbar-thumb {
+        background-color: var(--accent-color);
+        border-radius: 10px;
+        border: 2px solid rgba(0, 255, 255, 0.2);
+    }
+
+    .popup-content h2 {
+      color: var(--accent-color);
+      margin-bottom: var(--spacing-lg); /* More space */
+      text-align: center;
+      font-size: var(--font-size-xl);
+      text-shadow: var(--shadow-accent-light);
+    }
+
+    .popup-content p {
+      margin: var(--spacing-sm) 0;
+      font-size: var(--font-size-base);
+    }
+
+    .popup-content a {
+      color: var(--accent-color);
+      text-decoration: underline;
+    }
+
+    .popup-content a:hover {
+      color: var(--accent-hover);
+      text-decoration: none;
+      text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+    }
+
+    .popup-content .contact-section { /* Added class for new contact sections */
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .popup-content .contact-section h3 {
+        color: var(--text-color); /* Slightly different color for subheadings */
+        font-size: var(--font-size-lg);
+        margin-bottom: var(--spacing-sm);
+        text-align: left; /* Align contact info to left */
+    }
+
+    .popup-content .contact-section p {
+        margin-bottom: 5px; /* Smaller margin for list items */
+        text-align: left;
+    }
+
+    .popup-button {
+      background: var(--accent-color);
+      border: none;
+      padding: 12px 25px; /* Larger buttons */
+      border-radius: 10px; /* More rounded */
+      font-weight: bold;
+      cursor: pointer;
+      color: black;
+      transition: background-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+    }
+
+    .popup-button:hover {
+      background-color: var(--accent-hover);
+      transform: translateY(-3px);
+      box-shadow: 0 0 20px var(--accent-glow-strong);
+    }
+
+    .popup-continue-btn, .popup-close-contact-btn {
+        display: block;
+        margin: var(--spacing-lg) auto 0; /* More margin */
+    }
+
+    /* Keyframe Animations */
+    @keyframes pulsate {
+      0% { box-shadow: var(--shadow-accent-medium); }
+      50% { box-shadow: 0 0 25px var(--accent-glow-strong); }
+      100% { box-shadow: var(--shadow-accent-medium); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideInFromTop {
+      from { transform: translateY(-50px) scale(0.9); opacity: 0; }
+      to { transform: translateY(0) scale(1); opacity: 1; }
+    }
+
+
+    /* --- NEW CSS FOR SEARCH BAR --- */
+    .search-bar-container {
+        display: flex;
+        gap: 10px;
+        margin-bottom: var(--spacing-md);
+        background: var(--glass-bg-dark);
+        border-radius: 12px;
+        padding: 8px 12px;
+        border: 1px solid rgba(0, 255, 255, 0.3);
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+        transition: box-shadow var(--transition-medium);
+    }
+
+    .search-bar-container:focus-within {
+        box-shadow: 0 0 20px var(--accent-glow-strong);
+    }
+
+    .search-bar-container input[type="text"] {
+        flex-grow: 1;
+        padding: 10px 15px;
+        border: none;
+        background: transparent;
+        color: var(--text-color);
+        font-size: var(--font-size-base);
+        outline: none;
+        border-radius: 8px;
+        transition: background-color var(--transition-fast);
+    }
+
+    .search-bar-container input[type="text"]::placeholder {
+        color: rgba(224, 224, 224, 0.6);
+    }
+
+    .search-bar-container input[type="text"]:focus {
+        background-color: rgba(0, 255, 255, 0.05);
+    }
+
+    .search-bar-container button {
+        background: var(--accent-color);
+        color: black;
+        border: none;
+        padding: 10px 18px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: var(--font-size-base);
+        transition: background-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+        box-shadow: 0 0 8px rgba(0, 255, 255, 0.3);
+    }
+
+    .search-bar-container button:hover {
+        background-color: var(--accent-hover);
+        transform: translateY(-2px);
+        box-shadow: 0 0 15px var(--accent-glow-strong);
+    }
+
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      .tagline {
+        font-size: 1rem;
+      }
+      .top-logo-video {
+        width: 120px;
+        height: 120px;
+      }
+      .count-circle {
+        width: 90px;
+        height: 90px;
+      }
+      .count-circle .number {
+        font-size: 1.8rem;
+      }
+      .count-circle .label {
+        font-size: 0.7rem;
+      }
+      .info-section {
+        padding: 0 var(--spacing-sm);
+      }
+      .slide-panel {
+        width: 90%;
+      }
+      .popup-content {
+          padding: var(--spacing-md);
+          width: 95%;
+          max-height: 85vh; /* Adjust for smaller screens */
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: var(--spacing-sm);
+        background-size: 40px 40px; /* Smaller pattern */
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      .tagline {
+          font-size: 0.9rem;
+      }
+      .top-logo-video {
+        width: 100px;
+        height: 100px;
+      }
+      .count-overlay {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-sm);
+        top: auto;
+        bottom: var(--spacing-sm);
+      }
+      .count-circle {
+        width: 75px;
+        height: 75px;
+      }
+      .count-circle .number {
+        font-size: 1.4rem;
+      }
+      .count-circle .label {
+        font-size: 0.6rem;
+      }
+      .panel-btn {
+        top: auto;
+        bottom: var(--spacing-sm);
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+      }
+      .slide-panel {
+        width: 100%;
+        border-radius: 0;
+      }
+      .popup-content {
+        border-radius: 0;
+        padding: var(--spacing-md);
+        max-height: 80vh; /* Further adjust for very small screens */
+      }
+      .extra-blocks {
+          grid-template-columns: 1fr;
+      }
+      .footer-buttons {
+          flex-direction: column;
+      }
+      .search-bar-container {
+          flex-direction: column;
+          align-items: stretch;
+      }
+      .search-bar-container button {
+          width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top-logo-video">
+      <iframe frameborder="0" allowfullscreen scrolling="no" allow="autoplay;fullscreen" src="https://onelineplayer.com/player.html?autoplay=true&autopause=false&muted=true&loop=true&url=https%3A%2F%2Fwww.dropbox.com%2Fscl%2Ffi%2Fgwa0r1p4vch7fn9eimmh2%2Fkm_20250628_1440p_60f_20250628_072335.mp4%3Frlkey%3Do63qbh95xykyijmjsa2znwx33%26st%3Drqena374%26raw%3D1&poster=&time=false&progressBar=false&overlay=true&muteButton=true&fullscreenButton=false&style=light&quality=auto&playButton=false" title="VK Software's Studio Logo Animation"></iframe>
+    </div>
+    <h1>PLAY AT VK</h1>
+    <p class="tagline">Get everything from VK on this page</p>
+  </header>
+
+  <main>
+    <section class="hero-video-section">
+      <div class="count-overlay">
+        <div class="count-circle"><div class="number" id="gamesCount">0</div><div class="label">GAMES</div></div>
+        <div class="count-circle"><div class="number" id="appsCount">0</div><div class="label">SOFTWARE</div></div>
+      </div>
+      <iframe frameborder="0" allowfullscreen scrolling="no" allow="autoplay;fullscreen" src="https://onelineplayer.com/player.html?autoplay=true&autopause=false&muted=true&loop=true&url=https%3A%2F%2Fwww.dropbox.com%2Fscl%2Ffi%2Fpmdmce0thctd644wq96xk%2Fshorts-vtuber.mp4%3Frlkey%3D57sbw59ndzxeiz2wch2xqevy1%26st%3Db1o80xu4%26raw%3D1&overlay=true&muteButton=true&fullscreenButton=false&style=light&quality=auto&playButton=false" title="Main Promotional Video"></iframe>
+
+      <button class="panel-btn" id="gameBtn" aria-label="Open Games Panel">🎮</button>
+      <button class="panel-btn" id="softwareBtn" aria-label="Open Software Panel">💻</button>
+    </section>
+
+    <aside class="slide-panel" id="gamePanel">
+      <button class="close-panel" onclick="closePanel('gamePanel')" aria-label="Close Games Panel">></button>
+      <h2>My Games</h2>
+      <div class="search-bar-container">
+        <input type="text" id="gameSearchInput" placeholder="Search games...">
+        <button onclick="searchProjects('gameSearchInput', 'gamePanelContent', gamesData, 'game')">Search</button>
+      </div>
+      <div id="gamePanelContent" class="panel-content">
+        </div>
+    </aside>
+
+    <aside class="slide-panel" id="softwarePanel">
+      <button class="close-panel" onclick="closePanel('softwarePanel')" aria-label="Close Software Panel"><</button>
+      <h2>My Software</h2>
+      <div class="search-bar-container">
+        <input type="text" id="softwareSearchInput" placeholder="Search software...">
+        <button onclick="searchProjects('softwareSearchInput', 'softwarePanelContent', softwareData, 'app')">Search</button>
+      </div>
+      <div id="softwarePanelContent" class="panel-content">
+        </div>
+    </aside>
+
+    <section class="info-section">
+      <div class="info-box">
+        <h2>About Me</h2>
+        <p>
+          I’m VK, i create 2d,3d, game's and software's creative tools and games that bring fun, emotion, and innovation into every click.
+        </p>
+        <p>
+          **PLAYATVK.com– The Official Platform of VK Software’s&game's**
+        </p>
+        <p>
+          PLAYATVK is the official digital platform for discovering original applications and 2D games developed by VK . This site serves as a centralized hub for publishing quality, user-focused mobile solutions designed to enhance everyday digital experiences.
+        </p>
+        <p>
+          With a focus on innovation, performance, and user accessibility, PLAYATVK showcases a growing portfolio of functional tools, creative games, and experimental projects—built from the ground up with a dedication to simplicity and impact.
+        </p>
+      </div>
+      <div class="info-box">
+        <h2>My Projects</h2>
+        <p>Explore titles like CyberFun2D, FLAMES, Loopify, Bud Calc, and my dream game: To the Life.</p>
+      </div>
+    </section>
+
+    <section class="extra-blocks">
+      <div class="extra-box">Extra Block 1 - Content to be edited later</div>
+      <div class="extra-box news-updates-block">
+        <h3>News & Updates</h3>
+        <div class="news-item">
+            <span class="date">June 28, 2025</span>
+            <p>New update for **To the Life** is now live! Check out the improved crafting system.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="news-item">
+            <span class="date">June 15, 2025</span>
+            <p>**Loopify v1.2** released with new UI enhancements and performance optimizations.</p>
+            <a href="#">Download Now</a>
+        </div>
+        <div class="news-item">
+            <span class="date">May 30, 2025</span>
+            <p>Exciting new project in development! Stay tuned for teasers next month.</p>
+            <a href="#">Join Our Discord</a>
+        </div>
+        <div class="news-item">
+            <span class="date">May 10, 2025</span>
+            <p>We hit **10,000 downloads** across all our software! Thank you for your support!</p>
+            <a href="#">Celebrate with Us</a>
+        </div>
+      </div>
+      <div class="extra-box">Extra Block 3 - Content to be edited later</div>
+      <div class="extra-box">Extra Block 4 - Content to be edited later</div>
+      <div class="extra-box">Extra Block 5 - Content to be edited later</div>
+      <div class="extra-box">Extra Block 6 - Content to be edited later</div>
+      <div class="extra-box">Extra Block 7 - Content to be edited later</div>
+      <div class="social-links extra-box">
+        <h2>Connect With Me</h2>
+        <div class="social-buttons">
+          <a href="#" class="social-btn" aria-label="YouTube"><span class="sr-only">YouTube</span>YT</a>
+          <a href="#" class="social-btn" aria-label="Instagram"><span class="sr-only">Instagram</span>IG</a>
+          <a href="#" class="social-btn" aria-label="X (Twitter)"><span class="sr-only">X</span>X</a>
+          <a href="#" class="social-btn" aria-label="Discord"><span class="sr-only">Discord</span>DS</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© VKSoftware&Game's 2024–2025</footer>
+
+  <div class="footer-buttons">
+    <button id="showPrivacyBtn" class="popup-button">View Privacy Policy</button>
+    <button id="showContactBtn" class="popup-button">Contact Me</button>
+  </div>
+
+
+  <div id="privacyPopup" class="popup-overlay" role="dialog" aria-modal="true" aria-labelledby="privacyPopupHeading">
+    <div class="popup-content">
+      <button class="popup-close-btn" onclick="closePopup('privacyPopup')" aria-label="Close Privacy Policy">×</button>
+      <h2 id="privacyPopupHeading">Privacy Policy</h2>
+      <p>
+        **Effective Date: July 1, 2025**<br>
+        **Website: PLAY AT VK**<br>
+        **Owner: VK Software’s**
+      </p>
+      <p>
+        At PLAY AT VK, operated by VK Software’s, we are committed to respecting and protecting your privacy. This Privacy Policy describes how we collect, use, share, and protect information obtained through your interaction with our website and associated services, including access to downloadable content, game updates, and advertisements.
+      </p>
+      <p>
+        By accessing or using this website, you consent to the collection and use of information in accordance with this policy.
+      </p>
+
+      <h3>Information Collection</h3>
+      <p>
+        We collect both personal and non-personal information to ensure the proper functioning of the website and to enhance user experience. Information may be collected in the following ways:
+      </p>
+      <p>
+        **Voluntarily Provided Information:** This includes data you submit directly, such as your name, email address, or any other details provided through contact forms, support requests, or subscriptions.
+      </p>
+      <p>
+        **Automatically Collected Information:** We may collect data such as your IP address, device type, operating system, browser type, referral sources, pages visited, and general usage patterns through analytics tools and server logs.
+      </p>
+
+      <h3>Use of Information</h3>
+      <p>
+        The information collected is used for purposes including, but not limited to:
+      </p>
+      <ul>
+        <li>Delivering website content and services</li>
+        <li>Providing access to game files and updates</li>
+        <li>Responding to inquiries or support requests</li>
+        <li>Improving website performance, design, and security</li>
+        <li>Sending newsletters, product updates, or promotional communications, where consent has been given</li>
+        <li>Serving advertisements through third-party networks</li>
+      </ul>
+
+      <h3>Third-Party Advertising and Data Sharing</h3>
+      <p>
+        This website integrates advertisements from third-party advertising partners, including but not limited to Google AdMob, Start.io, and Unity Ads. These partners may collect and process personal and non-personal information about users, such as device identifiers, IP addresses, location data, and interactions with ads, to serve interest-based advertising and to monitor campaign performance.
+      </p>
+      <p>
+        Please be aware that by using this website or downloading games linked here, you acknowledge that certain data may be shared with these third-party advertising networks. VK Software’s does not control the data collection practices of these third parties and disclaims any responsibility for their handling of user information. We strongly encourage users to review the privacy policies of these advertising platforms before interacting with ads or providing consent.
+      </p>
+
+      <h3>External Links and Downloads</h3>
+      <p>
+        PLAY AT VK may include links to external platforms such as Google Drive, Mediafire, itch.io, the Google Play Store, or other file hosting services. These third-party sites operate independently and maintain their own privacy policies. VK Software’s is not responsible for the content, security, or data handling practices of any external sites.
+      </p>
+
+      <h3>Cookies and Tracking Technologies</h3>
+      <p>
+        We may use cookies and similar technologies to enhance website functionality, remember user preferences, and perform usage analysis. You have the option to control the use of cookies through your browser settings. Disabling cookies may impact certain features and functionality of the site.
+      </p>
+
+      <h3>Data Security</h3>
+      <p>
+        We implement commercially reasonable security measures to protect your data against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet or method of electronic storage is completely secure. As such, we cannot guarantee absolute security.
+      </p>
+
+      <h3>Children’s Privacy</h3>
+      <p>
+        This website and the services provided are not intended for children under the age of 13. We do not knowingly collect personal data from children. If we become aware that personal information from a minor has been collected, we will take immediate steps to delete such information.
+      </p>
+
+      <h3>Policy Updates</h3>
+      <p>
+        We reserve the right to amend this Privacy Policy at any time. Updates will be posted on this page and will take effect upon publication. Continued use of the site after any changes are made constitutes your acceptance of the revised policy.
+      </p>
+
+      <h3>Contact</h3>
+      <p>
+        For any questions, concerns, or data-related requests, please contact:<br>
+        VK Software’s<br>
+        📧 Email: <a href="mailto:vksoftwares.help@gmail.com">vksoftwares.help@gmail.com</a>
+      </p>
+      <button onclick="closePopup('privacyPopup')" class="popup-button popup-continue-btn">Continue</button>
+    </div>
+  </div>
+
+  <div id="contactPopup" class="popup-overlay" role="dialog" aria-modal="true" aria-labelledby="contactPopupHeading">
+    <div class="popup-content">
+      <button class="popup-close-btn" onclick="closePopup('contactPopup')" aria-label="Close Contact Form">×</button>
+      <h2 id="contactPopupHeading">Contact & Community</h2>
+      <p>
+        We’d love to hear from you. Whether you have a question, feedback, or a collaboration proposal — or just want to stay connected — you can reach us anytime through the options below.
+      </p>
+
+      <div class="contact-section">
+        <h3>📧 Email</h3>
+        <p>For support, feedback, or business inquiries:</p>
+        <p><a href="mailto:contactvkdev@gmail.com">contactvkdev@gmail.com</a></p>
+      </div>
+
+      <div class="contact-section">
+        <h3>📱 WhatsApp Group</h3>
+        <p>Join our official WhatsApp community for direct updates, sneak peeks, and open discussions with other players and the developer:</p>
+        <p>👉 <a href="#">Join WhatsApp Group</a></p>
+      </div>
+
+      <div class="contact-section">
+        <h3>📸 Instagram</h3>
+        <p>Follow us on Instagram to catch behind-the-scenes content, short clips, game teasers, and more:</p>
+        <p>👉 <a href="#">Follow on Instagram</a></p>
+      </div>
+
+      <div class="contact-section">
+        <h3>🌐 Website</h3>
+        <p>Explore games, project updates, and download links:</p>
+        <p><a href="https://playatvk.com" target="_blank" rel="noopener noreferrer">https://playatvk.com</a></p>
+      </div>
+
+      <p>> Thank you for supporting PLAY AT VK — where games meet creativity.</p>
+
+      <button onclick="closePopup('contactPopup')" class="popup-button popup-close-contact-btn">Close</button>
+    </div>
+  </div>
+
+  <script>
+    // --- Data for dynamic content ---
+    const gamesData = [
+      {
+        title: "To the Life",
+        description: "An immersive open-world life simulator where every choice shapes your destiny. Explore vast landscapes, build relationships, and carve out your unique story.",
+        videoSrc: "https://onelineplayer.com/player.html?autoplay=false&autopause=true&muted=false&loop=false&url=https%3A%2F%2Fwww.dropbox.com%2Fscl%2Ffi%2Fpmdmce0thctd644wq96xk%2Fshorts-vtuber.mp4%3Frlkey%3D57sbw59ndzxeiz2wch2xqevy1%26st%3Db1o80xu4%26raw%3D1&overlay=true&muteButton=true&fullscreenButton=true&style=light&quality=auto", // Example video URL
+        link: "#" // Replace with actual download/info link
+      },
+      {
+        title: "CyberFun2D",
+        description: "A fast-paced 2D platformer set in a neon-drenched cyberpunk city. Jump, dash, and hack your way through challenging levels.",
+        videoSrc: "https://onelineplayer.com/player.html?autoplay=false&autopause=true&muted=false&loop=false&url=https%3A%2F%2Fwww.dropbox.com%2Fscl%2Ffi%2Fpmdmce0thctd644wq96xk%2Fshorts-vtuber.mp4%3Frlkey%3D57sbw59ndzxeiz2wch2xqevy1%26st%3Db1o80xu4%26raw%3D1&overlay=true&muteButton=true&fullscreenButton=true&style=light&quality=auto",
+        link: "#"
+      },
+      {
+        title: "FLAMES",
+        description: "A puzzle game that challenges your logic and spatial reasoning with fiery elements.",
+        videoSrc: "https://onelineplayer.com/player.html?autoplay=false&autopause=true&muted=false&loop=false&url=https%3A%2F%2Fwww.dropbox.com%2Fscl%2Ffi%2Fpmdmce0thctd644wq96xk%2Fshorts-vtuber.mp4%3Frlkey%3D57sbw59ndzxeiz2wch2xqevy1%26st%3Db1o80xu4%26raw%3D1&overlay=true&muteButton=true&fullscreenButton=true&style=light&quality=auto",
+        link: "#"
+      },
+      {
+        title: "Game Title 4",
+        description: "Another exciting game to explore with unique features and engaging gameplay.",
+        videoSrc: "https://onelineplayer.com/player.html?autoplay=false&autopause=true&muted=false&loop=false&url=https%3A%2F%2Fwww.dropbox.com%2Fscl%2Ffi%2Fpmdmce0thctd644wq96xk%2Fshorts-vtuber.mp4%3Frlkey%3D57sbw59ndzxeiz2wch2xqevy1%26st%3Db1o80xu4%26raw%3D1&overlay=true&muteButton=true&fullscreenButton=true&style=light&quality=auto",
+        link: "#"
+      },
+      {
+        title: "Game Title 5",
+        description: "Experience the thrill of a new adventure in this captivating game.",
+        videoSrc: "https://onelineplayer.com/player.html?autoplay=false&autopause=true&muted=false&loop=false&url=https%3A%2F%2Fwww.dropbox.com%2Fscl%2Ffi%2Fpmdmce0thctd644wq96xk%2Fshorts-vtuber.mp4%3Frlkey%3D57sbw59ndzxeiz2wch2xqevy1%26st%3Db1o80xu4%26raw%3D1&overlay=true&muteButton=true&fullscreenButton=true&style=light&quality=auto",
+        link: "#"
+      },
+    ];
+
+    const softwareData = [
+      {
+        title: "Loopify",
+        description: "Your ultimate crochet companion app. Organize patterns, track progress, manage yarn stash, and find inspiration for your next project.",
+        videoSrc: "https://onelineplayer.com/player.html?autoplay=false&autopause=true&muted=false&loop=false&url=https%3A%2F%2Fwww.dropbox.com%2Fscl%2Ffi%2Fpmdmce0thctd644wq96xk%2Fshorts-vtuber.mp4%3Frlkey%3D57sbw59ndzxeiz2wch2xqevy1%26st%3Db1o80xu4%26raw%3D1&overlay=true&muteButton=true&fullscreenButton=true&style=light&quality=auto",
+        link: "#" // Replace with actual download/info link
+      },
+      {
+        title: "Bud Calc",
+        description: "A simple yet powerful personal finance tracker. Easily manage your monthly budget, track expenses, and visualize your spending habits.",
+        videoSrc: "https://onelineplayer.com/player.html?autoplay=false&autopause=true&muted=false&loop=false&url=https%3A%2F%2Fwww.dropbox.com%2Fscl%2Ffi%2Fpmdmce0thctd644wq96xk%2Fshorts-vtuber.mp4%3Frlkey%3D57sbw59ndzxeiz2wch2xqevy1%26st%3Db1o80xu4%26raw%3D1&overlay=true&muteButton=true&fullscreenButton=true&style=light&quality=auto",
+        link: "#"
+      },
+      {
+        title: "VKEnhancer",
+        description: "Boost your PC's performance with this lightweight system optimization tool. Clean junk files, manage startup items, and more.",
+        videoSrc: "https://onelineplayer.com/player.html?autoplay=false&autopause=true&muted=false&loop=false&url=https%3A%2F%2Fwww.dropbox.com%2Fscl%2Ffi%2Fpmdmce0thctd644wq96xk%2Fshorts-vtuber.mp4%3Frlkey%3D57sbw59ndzxeiz2wch2wch2xqevy1%26st%3Db1o80xu4%26raw%3D1&overlay=true&muteButton=true&fullscreenButton=true&style=light&quality=auto",
+        link: "#"
+      },
+      {
+        title: "ColorPalettePro",
+        description: "A sleek tool for designers to generate, save, and manage custom color palettes with ease.",
+        videoSrc: "https://onelineplayer.com/player.html?autoplay=false&autopause=true&muted=false&loop=false&url=https%3A%2F%2Fwww.dropbox.com%2Fscl%2Ffi%2Fpmdmce0thctd644wq96xk%2Fshorts-vtuber.mp4%3Frlkey%3D57sbw59ndzxeiz2wch2xqevy1%26st%3Db1o80xu4%26raw%3D1&overlay=true&muteButton=true&fullscreenButton=true&style=light&quality=auto",
+        link: "#"
+      },
+      {
+        title: "TaskFlow",
+        description: "A minimalist task manager designed to keep you focused and productive throughout your day.",
+        videoSrc: "https://onelineplayer.com/player.html?autoplay=false&autopause=true&muted=false&loop=false&url=https%3A%2F%2Fwww.dropbox.com%2Fscl%2Ffi%2Fpmdmce0thctd644wq96xk%2Fshorts-vtuber.mp4%3Frlkey%3D57sbw59ndzxeiz2wch2xqevy1%26st%3Db1o80xu4%26raw%3D1&overlay=true&muteButton=true&fullscreenButton=true&style=light&quality=auto",
+        link: "#"
+      },
+    ];
+
+    // --- Initialization on DOM Load ---
+    document.addEventListener('DOMContentLoaded', () => {
+      initCounters();
+      setupPanelButtons();
+      setupPopupButtons();
+      renderProjects('gamePanelContent', gamesData, 'game');
+      renderProjects('softwarePanelContent', softwareData, 'app');
+
+      // Add event listeners for instant search on keyup
+      document.getElementById('gameSearchInput').addEventListener('keyup', (event) => {
+        searchProjects('gameSearchInput', 'gamePanelContent', gamesData, 'game');
+      });
+      document.getElementById('softwareSearchInput').addEventListener('keyup', (event) => {
+        searchProjects('softwareSearchInput', 'softwarePanelContent', softwareData, 'app');
+      });
+    });
+
+    // --- Functions ---
+
+    /**
+     * Animates the game and software counters.
+     */
+    function initCounters() {
+      let currentGames = 0;
+      let currentApps = 0;
+      const gamesCountElem = document.getElementById('gamesCount');
+      const appsCountElem = document.getElementById('appsCount');
+
+      const maxGames = gamesData.length;
+      const maxApps = softwareData.length;
+
+      // Use Math.max to ensure counters show at least 0 if data is empty
+      gamesCountElem.textContent = maxGames;
+      appsCountElem.textContent = maxApps;
+
+      // Only animate if there's actual data to count up to
+      if (maxGames > 0 || maxApps > 0) {
+        gamesCountElem.textContent = 0; // Reset for animation
+        appsCountElem.textContent = 0; // Reset for animation
+
+        const interval = setInterval(() => {
+          let countingFinished = true;
+          if (currentGames < maxGames) {
+            gamesCountElem.textContent = ++currentGames;
+            countingFinished = false;
+          }
+          if (currentApps < maxApps) {
+            appsCountElem.textContent = ++currentApps;
+            countingFinished = false;
+          }
+          if (countingFinished) {
+            clearInterval(interval);
+          }
+        }, 150);
+      }
+    }
+
+    /**
+     * Sets up event listeners for the slide panel open/close buttons.
+     */
+    function setupPanelButtons() {
+      document.getElementById('gameBtn').addEventListener('click', () => openPanel('gamePanel'));
+      document.getElementById('softwareBtn').addEventListener('click', () => openPanel('softwarePanel'));
+    }
+
+    /**
+     * Opens a specified slide panel and hides the main panel buttons.
+     * @param {string} id - The ID of the panel to open.
+     */
+    function openPanel(id) {
+      document.getElementById(id).classList.add('open');
+      document.getElementById('gameBtn').classList.add('hidden');
+      document.getElementById('softwareBtn').classList.add('hidden');
+      document.body.style.overflow = 'hidden'; // Prevent scrolling background when side panel is open
+      // Trigger reflow to ensure smooth transition on elements that might affect layout
+      document.body.offsetWidth;
+    }
+
+    /**
+     * Closes a specified slide panel and shows the main panel buttons.
+     * @param {string} id - The ID of the panel to close.
+     */
+    function closePanel(id) {
+      document.getElementById(id).classList.remove('open');
+      // Adding a slight delay to re-show buttons after panel animation starts to hide
+      setTimeout(() => {
+        document.getElementById('gameBtn').classList.remove('hidden');
+        document.getElementById('softwareBtn').classList.remove('hidden');
+      }, 300); // Matches --transition-slow
+      document.body.style.overflow = ''; // Restore scrolling
+    }
+
+    /**
+     * Sets up event listeners for popup open/close buttons and outside click.
+     */
+    function setupPopupButtons() {
+      document.getElementById('showPrivacyBtn').addEventListener('click', () => {
+        openPopup('privacyPopup');
+      });
+      document.getElementById('showContactBtn').addEventListener('click', () => {
+        openPopup('contactPopup');
+      });
+
+      // Close popups when clicking outside the content (on the overlay itself)
+      document.getElementById('privacyPopup').addEventListener('click', (e) => {
+        if (e.target.id === 'privacyPopup') {
+          closePopup('privacyPopup');
+        }
+      });
+      document.getElementById('contactPopup').addEventListener('click', (e) => {
+        if (e.target.id === 'contactPopup') {
+          closePopup('contactPopup');
+        }
+      });
+    }
+
+    /**
+     * Opens a specified popup.
+     * @param {string} id - The ID of the popup overlay to open.
+     */
+    function openPopup(id) {
+      document.getElementById(id).style.display = 'flex';
+      // Trigger reflow
+      document.getElementById(id).offsetWidth;
+    }
+
+    /**
+     * Closes a specified popup.
+     * @param {string} id - The ID of the popup overlay to close.
+     */
+    function closePopup(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+
+    /**
+     * Dynamically renders game/app cards into a specified container.
+     * @param {string} containerId - The ID of the HTML element where cards will be rendered.
+     * @param {Array<Object>} dataArray - An array of project objects.
+     * @param {string} type - 'game' or 'app' to determine card class.
+     * @param {string} [searchTerm=''] - Optional search term to filter results.
+     */
+    function renderProjects(containerId, dataArray, type, searchTerm = '') {
+      const container = document.getElementById(containerId);
+      if (!container) {
+        console.error(`Container with ID '${containerId}' not found. Cannot render ${type}s.`);
+        return;
+      }
+      container.innerHTML = ''; // Clear existing content
+
+      const lowerCaseSearchTerm = searchTerm.toLowerCase();
+      const filteredData = dataArray.filter(project =>
+        project.title.toLowerCase().includes(lowerCaseSearchTerm) ||
+        project.description.toLowerCase().includes(lowerCaseSearchTerm)
+      );
+
+      if (filteredData.length === 0) {
+        container.innerHTML = `<p style="text-align: center; color: #aaa; margin-top: 20px;">No matching ${type}s found.</p>`;
+        return;
+      }
+
+      filteredData.forEach(project => {
+        const card = document.createElement('div');
+        card.className = `${type}-card`; // Will be 'game-card' or 'app-card'
+
+        // Check if videoSrc exists before adding video player
+        const videoPlayerHtml = project.videoSrc ? `
+          <div class="card-video-container">
+            <iframe
+              src="${project.videoSrc}"
+              title="${project.title} Video"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        ` : '';
+
+        card.innerHTML = `
+          <h3>${project.title}</h3>
+          <p>${project.description}</p>
+          ${videoPlayerHtml} <a href="${project.link}" target="_blank" rel="noopener noreferrer">Download / Learn More</a>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    /**
+     * Initiates a search for projects based on input.
+     * @param {string} inputId - The ID of the search input field.
+     * @param {string} containerId - The ID of the content container to render into.
+     * @param {Array<Object>} dataArray - The full array of project data (gamesData or softwareData).
+     * @param {string} type - 'game' or 'app'.
+     */
+    function searchProjects(inputId, containerId, dataArray, type) {
+      const searchTerm = document.getElementById(inputId).value;
+      renderProjects(containerId, dataArray, type, searchTerm);
+    }
+  </script>
+</body>
+</html>
